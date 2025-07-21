@@ -50,5 +50,56 @@
   <h1>My Simulated Day</h1>
   <div id="output"></div>
 
+  <script>
+    const output = document.getElementById("output");
+
+    // Function to update the display with the current activity
+    function displayActivity(message) {
+      console.log(message); // Also log to console for debugging
+      output.innerHTML = message;
+    }
+
+    // 1. Wake up
+    setTimeout(() => {
+      displayActivity("🌞 7:00 AM: Rise and shine! Time to start the day.");
+    }, 1000); // 1 second delay
+
+    // 2. Breakfast and Coffee
+    setTimeout(() => {
+      displayActivity("☕ 7:30 AM: Brewing coffee and having a quick breakfast.");
+    }, 3000); // 3 seconds total
+
+    // 3. Morning Coding Session
+    setTimeout(() => {
+      displayActivity("💻 9:00 AM: Deep focus. Working on a new feature.");
+    }, 5000); // 5 seconds total
+
+    // 4. Lunch Break
+    setTimeout(() => {
+      displayActivity("🥪 12:30 PM: Stepping away for a lunch break.");
+    }, 8000); // 8 seconds total
+
+    // 5. Afternoon work
+    setTimeout(() => {
+      displayActivity("🚀 2:00 PM: Back to it. Squashing some bugs!");
+    }, 10000); // 10 seconds total
+
+    // 6. Gym/Workout
+    setTimeout(() => {
+      displayActivity("💪 5:30 PM: Time to hit the gym and clear my head.");
+    }, 12000); // 12 seconds total
+    
+    // 7. Dinner
+    setTimeout(() => {
+      displayActivity("🍲 7:00 PM: Making and eating dinner.");
+    }, 14000); // 14 seconds total
+
+    // 8. Wind down
+    setTimeout(() => {
+      displayActivity("🌙 9:30 PM: Relaxing and getting ready for tomorrow.");
+    }, 16000); // 16 seconds total
+
+  </script>
+  
 </body>
 </html>
