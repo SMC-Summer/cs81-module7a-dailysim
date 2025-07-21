@@ -99,6 +99,23 @@
       displayActivity("🌙 9:30 PM: Relaxing and getting ready for tomorrow.");
     }, 16000); // 16 seconds total
 
+    /*
+     * SURPRISE / TWIST
+     * This function introduces a random event in the afternoon.
+     * It will either be an unexpected meeting or a surprise coffee run.
+     * The time is also slightly randomized to occur between the 10.5s and 11.5s mark.
+    */
+    const randomTwistTime = 10500 + Math.random() * 1000; // Random time between 10.5s and 11.5s
+    const surprises = [
+      "😱 Surprise! An unexpected meeting just got added to the calendar.",
+      "🎉 A friend called for a spontaneous coffee run!"
+    ];
+    
+    setTimeout(() => {
+        const randomSurprise = surprises[Math.floor(Math.random() * surprises.length)];
+        displayActivity(`🚨 3:30 PM: ${randomSurprise}`);
+    }, randomTwistTime);
+    
   </script>
   
 </body>
